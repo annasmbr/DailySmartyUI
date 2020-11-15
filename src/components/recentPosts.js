@@ -59,3 +59,5 @@ export default connect(mapStateToProps, actions)(RecentPosts);
 //<li>recent post 0</li>
 //<li>recent post 1</li>
 //<li>recent post 2</li>
+
+//<Post title={post.title} content={post.content} associated_topics={post.associated_topics} key={index}/>

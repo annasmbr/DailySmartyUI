@@ -1,22 +1,31 @@
 import {
-    SET_RECENT_POSTS
+    SET_RECENT_POSTS,
+    SET_RESULTS_POSTS
 } from '../actions/types';
 
 const INIT_STATE = {
-    posts: [],
+    resultsPosts: [],
     recentPosts: []
+    //posts: [],
 }
 
 export default function(state = INIT_STATE, action) {
     switch (action.type) {
         case SET_RECENT_POSTS:
-
             //return [...state, recentPosts: action.payload]
             const recentPosts = action.payload;
-            return {
-                    ...state,
-                    recentPosts
-                }
+             return {
+                ...state,
+                recentPosts
+            }
+        case SET_RESULTS_POSTS:
+            const resultsPosts = action.payload;
+              return {
+                  ...state, 
+             resultsPosts
+                //posts
+                
+            }            
         default:
             return state;
     }

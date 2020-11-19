@@ -24,7 +24,10 @@ class SearchBar extends Component {
            // <form>
               // <input placeholder="Search DailySmarty"/>
             <form className="search-bar" onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-              <Field name="query" component={this.renderInput}/>     
+              <div className="search-bar__wrapper">
+                    <Field name="query" component={this.renderInput}/>
+                    <p>Press return to search</p>
+                </div>
             </form>
         )
     }
@@ -37,3 +40,5 @@ SearchBar = reduxForm({
 SearchBar = withRouter(SearchBar);
 
 export default SearchBar;
+
+//<Field name="query" component={this.renderInput}/>

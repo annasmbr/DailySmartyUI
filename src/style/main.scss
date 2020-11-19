@@ -30,3 +30,14 @@ body {
     justify-items: center;
     // grid-template-rows: 1fr 2fr 1fr;
 }
+
+//.logo-main {
+ //   display: grid;
+   // justify-content: center;
+  //  align-items: center;
+//}
+
+$color-gray-one: #666666;
+$color-gray-two: #B3B3B3;
+
+@import './searchBar';

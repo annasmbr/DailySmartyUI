@@ -24,7 +24,7 @@ class Home extends Component {
     return (
       <div className="home">
         <Logo/>
-        <SearchBar onSubmit={(query) => this.handleSearchBarSubmit(query)}/>
+        <SearchBar page="home" onSubmit={(query) => this.handleSearchBarSubmit(query)}/>
         <RecentPosts/>
       </div>
       //<div>
@@ -44,3 +44,4 @@ export default connect(null, actions)(Home);
 //<h1>Logo</h1>
 //<div className='app'>
 //<SearchBar/>
+//<SearchBar onSubmit={(query) => this.handleSearchBarSubmit(query)}/>

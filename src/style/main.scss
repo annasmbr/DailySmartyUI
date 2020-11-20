@@ -5,9 +5,9 @@
    // }
 //}
 
-.post-topic {
-    margin: 0 4px;
-}
+//.post-topic {
+ //   margin: 0 4px;
+//}
 
 //html {
  //   font-family: 'Lato', sans-serif;
@@ -59,6 +59,6 @@ $color-blue-one: #0079FF;
 @import './mixins';
 @import './searchBar';
 @import './recentPosts';
-//@import './post';
+@import './post';
 @import './home';
 @import './results';
